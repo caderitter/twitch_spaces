@@ -1,5 +1,7 @@
 #!/usr/local/bin/python
 
+import os
+
 string = str(input("String: "))
 multiplier = input("Multiplier:")
 iter_string = range(len(string))
@@ -17,7 +19,7 @@ for i in iter_string:
 		else: 
 			new_string += ("  " * multiplier)
 
-print new_string
+os.system("echo '%s' | pbcopy" % new_string)
 
 
 		
